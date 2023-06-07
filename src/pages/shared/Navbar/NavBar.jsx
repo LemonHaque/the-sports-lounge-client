@@ -58,7 +58,7 @@ const NavBar = () => {
                     <button >Log Out</button>
                 </NavLink>
                 <NavLink to='/login'>
-                    <button className="btn btn-warning ">Login</button>
+                    <button className="btn btn-warning btn-outline ">Login</button>
                 </NavLink>
             </div>
         </div>

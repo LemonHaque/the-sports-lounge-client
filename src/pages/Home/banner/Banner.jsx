@@ -1,4 +1,5 @@
 
+import {  Zoom } from 'react-awesome-reveal';
 import bg1 from '../../../assets/bg1.jpg';
 import bg2 from '../../../assets/bg2.jpg';
 import bg3 from '../../../assets/bg3.jpg';
@@ -7,6 +8,7 @@ import bg4 from '../../../assets/bg4.jpg';
 const Banner = () => {
     return (
         <div>
+            <Zoom>
             <div className="carousel h-screen">
                 <div id="slide1" className="carousel-item relative w-full">
                     <div
@@ -26,7 +28,7 @@ const Banner = () => {
                             <p>Let's make your summer vacation enjoyable and exciting also learn sports with proper skill with us.All champions are made when nobody is watching. Don't say, “We can't do it,” just say, “We will do it anyway.” Those who make the most of small opportunities find greater ones. Nothing is impossible.</p>
                             
                         </div>
-                        <button className='btn btn-warning'>Explore More</button>
+                        <button className='btn btn-warning'>Explore More ❯❯</button>
                     </div>
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 z-20 top-1/2">
                         <a href="#slide4" className="btn btn-circle">❮</a>
@@ -50,7 +52,7 @@ const Banner = () => {
                         <div className='max-w-3xl mx-auto mt-4 mb-10'>
                             <p>Let's make your summer vacation enjoyable and exciting also learn sports with proper skill with us.All champions are made when nobody is watching. Don't say, “We can't do it,” just say, “We will do it anyway.” Those who make the most of small opportunities find greater ones. Nothing is impossible.</p>
                         </div>
-                        <button className='btn btn-warning'>Explore More</button>
+                        <button className='btn btn-warning'>Explore More  ❯❯</button>
                     </div>
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 z-20 top-1/2">
                         <a href="#slide1" className="btn btn-circle">❮</a>
@@ -74,7 +76,7 @@ const Banner = () => {
                         <div className='max-w-3xl mx-auto mt-4 mb-10'>
                             <p>Let's make your summer vacation enjoyable and exciting also learn sports with proper skill with us.All champions are made when nobody is watching. Don't say, “We can't do it,” just say, “We will do it anyway.” Those who make the most of small opportunities find greater ones. Nothing is impossible.</p>
                         </div>
-                        <button className='btn btn-warning'>Explore More</button>
+                        <button className='btn btn-warning'>Explore More  ❯❯</button>
                     </div>
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 z-20 top-1/2">
                         <a href="#slide2" className="btn btn-circle">❮</a>
@@ -98,7 +100,7 @@ const Banner = () => {
                         <div className='max-w-3xl mx-auto mt-4 mb-10'>
                             <p>Let's make your summer vacation enjoyable and exciting also learn sports with proper skill with us.All champions are made when nobody is watching. Don't say, “We can't do it,” just say, “We will do it anyway.” Those who make the most of small opportunities find greater ones. Nothing is impossible.</p>
                         </div>
-                        <button className='btn btn-warning'>Explore More</button>
+                        <button className='btn btn-warning'>Explore More  ❯❯</button>
                     </div>
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 z-20 top-1/2">
                         <a href="#slide3" className="btn btn-circle">❮</a>
@@ -117,6 +119,7 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
+            </Zoom>
         </div>
     );
 };
