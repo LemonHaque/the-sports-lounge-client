@@ -10,9 +10,9 @@ const Gallery = () => {
     return (
         <div className="max-w-7xl mx-auto">
             <Fade duration={3000}>
-                <div className="text-center my-10">
-                    <p className="text-xl font-semibold bg-blue-100 rounded px-4 py-3 w-1/6 md:w-[150px] mx-auto text-blue-700 my-4">Join With Us</p>
-                    <p className="text-4xl md:text-5xl font-bold text-blue-700 uppercase border-y-4 py-4 w-4/12 mx-auto">Our Gallery</p>
+            <div className="text-center my-10">
+                    <p className="text-xl font-semibold bg-black bg-opacity-20 rounded px-4 py-3 w-1/6 md:w-[150px] mx-auto text-black-700 my-4">Join With Us</p>
+                    <p className="text-4xl md:text-5xl font-bold text-black uppercase border-y-4 py-4 w-4/12 mx-auto">Our Gallery</p>
                 </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-8">
                 <div><img className='h-72' src={img1} alt="" /></div>
