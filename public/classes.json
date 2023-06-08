@@ -1,0 +1,189 @@
+[
+  {
+    "_id": "sp001",
+    "image": "https://i.ibb.co/R4jQvFW/football.jpg",
+    "name": "Football Training",
+    "type": "popular",
+    "sports": "Football",
+    "instructorName": "John Doe",
+    "availableSeats": 10,
+    "price": 50,
+    "numberOfStudents": 200
+  },
+  {
+    "_id": "sp002",
+    "image": "https://i.ibb.co/4WMZPBk/cricket.jpg",
+    "name": "Cricket Coaching",
+    "type": "popular",
+    "sports": "Cricket",
+    "instructorName": "Jane Smith",
+    "availableSeats": 15,
+    "price": 40,
+    "numberOfStudents": 200
+  },
+  {
+    "_id": "sp003",
+    "image": "https://i.ibb.co/99bbT05/badminton.jpg",
+    "name": "Badminton Lessons",
+    "type": "popular",
+    "sports": "Badminton",
+    "instructorName": "David Johnson",
+    "availableSeats": 8,
+    "price": 30,
+    "numberOfStudents": 200
+  },
+  {
+    "_id": "sp004",
+    "image": "https://i.ibb.co/nPMkxGr/basketball.jpg",
+    "name": "Basketball Camp",
+    "type": "popular",
+    "sports": "Basketball",
+    "instructorName": "Sarah Davis",
+    "availableSeats": 12,
+    "price": 60,
+    "numberOfStudents": 200
+  },
+  {
+    "_id": "sp005",
+    "image": "https://i.ibb.co/0YFrvnd/volley.jpg",
+    "name": "Volleyball Training",
+    "type": "popular",
+    "sports": "Volleyball",
+    "instructorName": "Michael Brown",
+    "availableSeats": 20,
+    "price": 35,
+    "numberOfStudents": 200
+  },
+  {
+    "_id": "sp006",
+    "image": "https://i.ibb.co/jfdywL5/tennis.jpg",
+    "name": "Tennis Lessons",
+    "type": "popular",
+    "sports": "Tennis",
+    "instructorName": "Emily Wilson",
+    "availableSeats": 6,
+    "price": 25,
+    "numberOfStudents": 200
+  },
+  {
+    "_id": "sp007",
+    "image": "https://i.ibb.co/Y3FJGyh/hockey.jpg",
+    "name": "Hockey Training",
+    "type": "regular",
+    "sports": "Hockey",
+    "instructorName": "Robert Lee",
+    "availableSeats": 14,
+    "price": 55,
+    "numberOfStudents": 80
+  },
+  {
+    "_id": "sp008",
+    "image": "football.jpg",
+    "name": "Football Camp",
+    "type": "regular",
+    "sports": "Football",
+    "instructorName": "Alex Turner",
+    "availableSeats": 20,
+    "price": 45,
+    "numberOfStudents": 80
+  },
+  {
+    "_id": "sp009",
+    "image": "cricket.jpg",
+    "name": "Cricket Tournament",
+    "type": "regular",
+    "sports": "Cricket",
+    "instructorName": "Jessica Anderson",
+    "availableSeats": 25,
+    "price": 35,
+    "numberOfStudents": 80
+  },
+  {
+    "_id": "sp010",
+    "image": "badminton.jpg",
+    "name": "Badminton Workshop",
+    "type": "regular",
+    "sports": "Badminton",
+    "instructorName": "Andrew Wilson",
+    "availableSeats": 12,
+    "price": 30,
+    "numberOfStudents": 80
+  },
+  {
+    "_id": "sp011",
+    "image": "basketball.jpg",
+    "name": "Basketball Training",
+    "type": "regular",
+    "sports": "Basketball",
+    "instructorName": "Olivia Brown",
+    "availableSeats": 18,
+    "price": 55,
+    "numberOfStudents": 80
+  },
+  {
+    "_id": "sp012",
+    "image": "volleyball.jpg",
+    "name": "Volleyball Clinic",
+    "type": "regular",
+    "sports": "Volleyball",
+    "instructorName": "William Taylor",
+    "availableSeats": 15,
+    "price": 40,
+    "numberOfStudents": 80
+  },
+  {
+    "_id": "sp013",
+    "image": "tennis.jpg",
+    "name": "Tennis Summer Camp",
+    "type": "regular",
+    "sports": "Tennis",
+    "instructorName": "Sophia Mitchell",
+    "availableSeats": 10,
+    "price": 60,
+    "numberOfStudents": 80
+  },
+  {
+    "_id": "sp014",
+    "image": "hockey.jpg",
+    "name": "Hockey Skills Workshop",
+    "type": "regular",
+    "sports": "Hockey",
+    "instructorName": "Daniel Clark",
+    "availableSeats": 8,
+    "price": 50,
+    "numberOfStudents": 80
+  },
+  {
+    "_id": "sp015",
+    "image": "football.jpg",
+    "name": "Football Conditioning",
+    "type": "regular",
+    "sports": "Football",
+    "instructorName": "Sophie White",
+    "availableSeats": 15,
+    "price": 40,
+    "numberOfStudents": 80
+  },
+  {
+    "_id": "sp016",
+    "image": "cricket.jpg",
+    "name": "Cricket Skills Development",
+    "type": "regular",
+    "sports": "Cricket",
+    "instructorName": "Benjamin Harris",
+    "availableSeats": 10,
+    "price": 30,
+    "numberOfStudents": 80
+  },
+  {
+    "_id": "sp017",
+    "image": "badminton.jpg",
+    "name": "Badminton League",
+    "type": "regular",
+    "sports": "Badminton",
+    "instructorName": "Ava Thompson",
+    "availableSeats": 20,
+    "price": 45,
+    "numberOfStudents": 80
+  }
+]

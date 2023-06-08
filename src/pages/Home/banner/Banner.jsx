@@ -1,5 +1,5 @@
 
-import {  Zoom } from 'react-awesome-reveal';
+
 import bg1 from '../../../assets/bg1.jpg';
 import bg2 from '../../../assets/bg2.jpg';
 import bg3 from '../../../assets/bg3.jpg';
@@ -8,7 +8,7 @@ import bg4 from '../../../assets/bg4.jpg';
 const Banner = () => {
     return (
         <div>
-            <Zoom>
+           
             <div className="carousel h-screen">
                 <div id="slide1" className="carousel-item relative w-full">
                     <div
@@ -127,7 +127,6 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            </Zoom>
         </div>
     );
 };
