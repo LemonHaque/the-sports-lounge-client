@@ -8,7 +8,7 @@
     "instructorName": "John Doe",
     "availableSeats": 10,
     "price": 50,
-    "numberOfStudents": 200
+    "numberOfStudents": 40
   },
   {
     "_id": "sp002",
@@ -17,9 +17,9 @@
     "type": "popular",
     "sports": "Cricket",
     "instructorName": "Jane Smith",
-    "availableSeats": 15,
+    "availableSeats": 2,
     "price": 40,
-    "numberOfStudents": 200
+    "numberOfStudents": 38
   },
   {
     "_id": "sp003",
@@ -28,9 +28,9 @@
     "type": "popular",
     "sports": "Badminton",
     "instructorName": "David Johnson",
-    "availableSeats": 8,
+    "availableSeats": 2,
     "price": 30,
-    "numberOfStudents": 200
+    "numberOfStudents": 38
   },
   {
     "_id": "sp004",
@@ -39,9 +39,9 @@
     "type": "popular",
     "sports": "Basketball",
     "instructorName": "Sarah Davis",
-    "availableSeats": 12,
+    "availableSeats": 3,
     "price": 60,
-    "numberOfStudents": 200
+    "numberOfStudents": 37
   },
   {
     "_id": "sp005",
@@ -50,9 +50,9 @@
     "type": "popular",
     "sports": "Volleyball",
     "instructorName": "Michael Brown",
-    "availableSeats": 20,
+    "availableSeats": 4,
     "price": 35,
-    "numberOfStudents": 200
+    "numberOfStudents": 36
   },
   {
     "_id": "sp006",
@@ -61,9 +61,9 @@
     "type": "popular",
     "sports": "Tennis",
     "instructorName": "Emily Wilson",
-    "availableSeats": 6,
+    "availableSeats": 3,
     "price": 25,
-    "numberOfStudents": 200
+    "numberOfStudents": 37
   },
   {
     "_id": "sp007",
@@ -72,9 +72,9 @@
     "type": "regular",
     "sports": "Hockey",
     "instructorName": "Robert Lee",
-    "availableSeats": 14,
+    "availableSeats": 0,
     "price": 55,
-    "numberOfStudents": 80
+    "numberOfStudents": 40
   },
   {
     "_id": "sp008",
@@ -83,9 +83,9 @@
     "type": "regular",
     "sports": "Football",
     "instructorName": "Alex Turner",
-    "availableSeats": 20,
+    "availableSeats": 12,
     "price": 45,
-    "numberOfStudents": 80
+    "numberOfStudents": 28
   },
   {
     "_id": "sp009",
@@ -94,9 +94,9 @@
     "type": "regular",
     "sports": "Cricket",
     "instructorName": "Jessica Anderson",
-    "availableSeats": 25,
+    "availableSeats": 14,
     "price": 35,
-    "numberOfStudents": 80
+    "numberOfStudents": 26
   },
   {
     "_id": "sp010",
@@ -105,9 +105,9 @@
     "type": "regular",
     "sports": "Badminton",
     "instructorName": "Andrew Wilson",
-    "availableSeats": 12,
+    "availableSeats": 18,
     "price": 30,
-    "numberOfStudents": 80
+    "numberOfStudents": 22
   },
   {
     "_id": "sp011",
@@ -116,9 +116,9 @@
     "type": "regular",
     "sports": "Basketball",
     "instructorName": "Olivia Brown",
-    "availableSeats": 18,
+    "availableSeats": 21,
     "price": 55,
-    "numberOfStudents": 80
+    "numberOfStudents": 19
   },
   {
     "_id": "sp012",
@@ -127,9 +127,9 @@
     "type": "regular",
     "sports": "Volleyball",
     "instructorName": "William Taylor",
-    "availableSeats": 15,
+    "availableSeats": 23,
     "price": 40,
-    "numberOfStudents": 80
+    "numberOfStudents": 17
   },
   {
     "_id": "sp013",
@@ -138,9 +138,9 @@
     "type": "regular",
     "sports": "Tennis",
     "instructorName": "Sophia Mitchell",
-    "availableSeats": 10,
+    "availableSeats": 15,
     "price": 60,
-    "numberOfStudents": 80
+    "numberOfStudents": 15
   },
   {
     "_id": "sp014",
@@ -149,9 +149,9 @@
     "type": "regular",
     "sports": "Hockey",
     "instructorName": "Daniel Clark",
-    "availableSeats": 8,
+    "availableSeats": 24,
     "price": 50,
-    "numberOfStudents": 80
+    "numberOfStudents": 16
   },
   {
     "_id": "sp015",
@@ -160,9 +160,9 @@
     "type": "regular",
     "sports": "Football",
     "instructorName": "Sophie White",
-    "availableSeats": 15,
+    "availableSeats": 13,
     "price": 40,
-    "numberOfStudents": 80
+    "numberOfStudents": 27
   },
   {
     "_id": "sp016",
@@ -171,9 +171,9 @@
     "type": "regular",
     "sports": "Cricket",
     "instructorName": "Benjamin Harris",
-    "availableSeats": 10,
+    "availableSeats": 14,
     "price": 30,
-    "numberOfStudents": 80
+    "numberOfStudents": 26
   },
   {
     "_id": "sp017",
@@ -182,8 +182,8 @@
     "type": "regular",
     "sports": "Badminton",
     "instructorName": "Ava Thompson",
-    "availableSeats": 20,
+    "availableSeats": 16,
     "price": 45,
-    "numberOfStudents": 80
+    "numberOfStudents": 24
   }
 ]
