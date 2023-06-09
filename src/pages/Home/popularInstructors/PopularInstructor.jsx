@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
-const PopularInstructor = () => {
 
+
+const PopularInstructor = () => {
     const [classes, setClasses] = useState([]);
+
     useEffect(() => {
         fetch('classes.json')
             .then(res => res.json())
@@ -10,8 +12,8 @@ const PopularInstructor = () => {
                 const popularItems = data.filter(item => item.type === 'popular')
                 setClasses(popularItems)
             })
+    }, []);
 
-    }, [])
     return (
         <div>
             <Fade duration={3000}>

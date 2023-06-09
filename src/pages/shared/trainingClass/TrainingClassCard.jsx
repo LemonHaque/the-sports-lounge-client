@@ -12,7 +12,7 @@ const TrainingClassCard = ({ item }) => {
                     <p className="absolute top-4 right-4 btn btn-sm btn-warning">Trending</p>
                     <div className="card-actions justify-end mx-auto">
                         
-                        <button className="btn btn-warning btn-outline">Get Admited!</button>
+                        <button className="btn btn-warning btn-outline">Get Admited</button>
                     </div>
                 </div>
             </div>

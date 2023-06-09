@@ -6,6 +6,8 @@
     "type": "popular",
     "sports": "Football",
     "instructorName": "John Doe",
+    "profilePic": "https://i.ibb.co/LCWWFGL/football-trainer-teaching-his-pupils.jpg",
+    "email": "example@email.com",
     "availableSeats": 10,
     "price": 50,
     "numberOfStudents": 40
@@ -17,6 +19,8 @@
     "type": "popular",
     "sports": "Cricket",
     "instructorName": "Jane Smith",
+    "profilePic": "https://i.ibb.co/WDKz0Km/confident-sportsman-with-headphones-jumping-rope.jpg",
+    "email": "example@email.com",
     "availableSeats": 2,
     "price": 40,
     "numberOfStudents": 38
@@ -28,6 +32,8 @@
     "type": "popular",
     "sports": "Badminton",
     "instructorName": "David Johnson",
+    "profilePic": "https://i.ibb.co/889BVPr/strength-beard-headphone-power-athlete.jpg",
+    "email": "example@email.com",
     "availableSeats": 2,
     "price": 30,
     "numberOfStudents": 38
@@ -39,6 +45,8 @@
     "type": "popular",
     "sports": "Basketball",
     "instructorName": "Sarah Davis",
+    "profilePic": "https://i.ibb.co/KrDkPcb/front-view-male-player-posing-with-basketball.jpg",
+    "email": "example@email.com",
     "availableSeats": 3,
     "price": 60,
     "numberOfStudents": 37
@@ -49,7 +57,9 @@
     "name": "Volleyball Training",
     "type": "popular",
     "sports": "Volleyball",
-    "instructorName": "Michael Brown",
+    "instructorName": "Ariana Lehman",
+    "profilePic": "hhttps://i.ibb.co/1MjdYMb/portrait-female-referee.jpg",
+    "email": "example@email.com",
     "availableSeats": 4,
     "price": 35,
     "numberOfStudents": 36
@@ -61,6 +71,8 @@
     "type": "popular",
     "sports": "Tennis",
     "instructorName": "Emily Wilson",
+    "profilePic": "https://i.ibb.co/LCWWFGL/football-trainer-teaching-his-pupils.jpg",
+    "email": "example@email.com",
     "availableSeats": 3,
     "price": 25,
     "numberOfStudents": 37
@@ -72,6 +84,8 @@
     "type": "regular",
     "sports": "Hockey",
     "instructorName": "Robert Lee",
+    "profilePic": "https://i.ibb.co/WDKz0Km/confident-sportsman-with-headphones-jumping-rope.jpg",
+    "email": "example@email.com",
     "availableSeats": 0,
     "price": 55,
     "numberOfStudents": 40
@@ -83,6 +97,8 @@
     "type": "regular",
     "sports": "Football",
     "instructorName": "Alex Turner",
+    "profilePic": "https://i.ibb.co/LCWWFGL/football-trainer-teaching-his-pupils.jpg",
+    "email": "example@email.com",
     "availableSeats": 12,
     "price": 45,
     "numberOfStudents": 28
@@ -94,6 +110,8 @@
     "type": "regular",
     "sports": "Cricket",
     "instructorName": "Jessica Anderson",
+    "profilePic": "https://i.ibb.co/LCWWFGL/football-trainer-teaching-his-pupils.jpg",
+    "email": "example@email.com",
     "availableSeats": 14,
     "price": 35,
     "numberOfStudents": 26
@@ -105,6 +123,8 @@
     "type": "regular",
     "sports": "Badminton",
     "instructorName": "Andrew Wilson",
+    "profilePic": "https://i.ibb.co/LCWWFGL/football-trainer-teaching-his-pupils.jpg",
+    "email": "example@email.com",
     "availableSeats": 18,
     "price": 30,
     "numberOfStudents": 22
@@ -116,6 +136,8 @@
     "type": "regular",
     "sports": "Basketball",
     "instructorName": "Olivia Brown",
+    "profilePic": "https://i.ibb.co/LCWWFGL/football-trainer-teaching-his-pupils.jpg",
+    "email": "example@email.com",
     "availableSeats": 21,
     "price": 55,
     "numberOfStudents": 19
@@ -127,6 +149,8 @@
     "type": "regular",
     "sports": "Volleyball",
     "instructorName": "William Taylor",
+    "profilePic": "https://i.ibb.co/LCWWFGL/football-trainer-teaching-his-pupils.jpg",
+    "email": "example@email.com",
     "availableSeats": 23,
     "price": 40,
     "numberOfStudents": 17
@@ -138,6 +162,8 @@
     "type": "regular",
     "sports": "Tennis",
     "instructorName": "Sophia Mitchell",
+    "profilePic": "https://i.ibb.co/LCWWFGL/football-trainer-teaching-his-pupils.jpg",
+    "email": "example@email.com",
     "availableSeats": 15,
     "price": 60,
     "numberOfStudents": 15
@@ -149,6 +175,8 @@
     "type": "regular",
     "sports": "Hockey",
     "instructorName": "Daniel Clark",
+    "profilePic": "https://i.ibb.co/LCWWFGL/football-trainer-teaching-his-pupils.jpg",
+    "email": "example@email.com",
     "availableSeats": 24,
     "price": 50,
     "numberOfStudents": 16
@@ -160,6 +188,8 @@
     "type": "regular",
     "sports": "Football",
     "instructorName": "Sophie White",
+    "profilePic": "https://i.ibb.co/LCWWFGL/football-trainer-teaching-his-pupils.jpg",
+    "email": "example@email.com",
     "availableSeats": 13,
     "price": 40,
     "numberOfStudents": 27
@@ -171,6 +201,8 @@
     "type": "regular",
     "sports": "Cricket",
     "instructorName": "Benjamin Harris",
+    "profilePic": "https://i.ibb.co/LCWWFGL/football-trainer-teaching-his-pupils.jpg",
+    "email": "example@email.com",
     "availableSeats": 14,
     "price": 30,
     "numberOfStudents": 26
@@ -182,6 +214,8 @@
     "type": "regular",
     "sports": "Badminton",
     "instructorName": "Ava Thompson",
+    "profilePic": "https://i.ibb.co/LCWWFGL/football-trainer-teaching-his-pupils.jpg",
+    "email": "example@email.com",
     "availableSeats": 16,
     "price": 45,
     "numberOfStudents": 24
