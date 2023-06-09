@@ -1,10 +1,9 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import img from "../../assets/login.png"
-
-// import { useContext } from "react";
-// import { AuthContext } from "../../Providers/AuthProvider";
 import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 // import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
 
@@ -50,7 +49,7 @@ const Login = () => {
                 <div className="w-1/2 h-1/2 mx-auto">
                     <img src={img} alt="" />
                 </div>
-                <div className="w-1/2 h-1/2 mx-auto">
+                <div className="w-1/2 h-1/2 mx-auto py-20">
 
                     <div className=' flex flex-col justify-center'>
                         <form onSubmit={handleLogin} className='max-w-[400px] w-full mx-auto rounded-lg shadow-xl p-8 px-8'>
@@ -72,7 +71,7 @@ const Login = () => {
                                 <p className='text-center'>Do not have an account? <Link className='text-blue-500' to='/signup'>Sign Up</Link></p>
                             </div>
 
-                            <SocialLogin></SocialLogin>
+                            {/* <SocialLogin></SocialLogin> */}
                         </form>
                     </div>
                 </div>
