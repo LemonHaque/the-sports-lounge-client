@@ -1,16 +1,15 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import img from "../../assets/others/authentication1.png"
-import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
-import { useContext, useEffect } from "react";
-import { AuthContext } from "../../Providers/AuthProvider";
+import img from "../../assets/login.png"
+
+// import { useContext } from "react";
+// import { AuthContext } from "../../Providers/AuthProvider";
 import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
-import SocialLogin from "../Shared/SocialLogin/SocialLogin";
+// import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
 
 
 const Login = () => {
-    // const [disabled, setDisabled] = useState(true);
 
     const { signIn } = useContext(AuthContext);
     const navigate = useNavigate();
@@ -18,16 +17,12 @@ const Login = () => {
 
     const from = location.state?.from?.pathname || "/";
 
-    useEffect(() => {
-        loadCaptchaEnginge(6);
-    }, [])
-
     const handleLogin = event => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
+        
         signIn(email, password)
             .then(result => {
                 const user = result.user;
@@ -45,21 +40,10 @@ const Login = () => {
             })
     }
 
-    const handleValidateCaptcha = (e) => {
-        const user_captcha_value = e.target.value;
-        console.log(user_captcha_value);
-        if (validateCaptcha(user_captcha_value)) {
-            // setDisabled(false)
-        }
-        else {
-            // setDisabled(true)
-        }
-    }
-
     return (
         <div className="py-20">
             <Helmet>
-                <title>Bistro Boss | Login</title>
+                <title>Sports Lounge | Login</title>
             </Helmet>
             <h2 className='text-5xl text-yellow-600  font-bold text-center'>Login</h2>
             <div className=" md:flex md:justify-between w-full">
@@ -79,11 +63,6 @@ const Login = () => {
                                 <label>Password</label>
                                 <input className='p-2 rounded-lg border mt-2 focus:border-yellow-500 focus:outline-none' type="password" name='password' required />
                             </div>
-                            <div className='flex flex-col py-2'>
-                                <LoadCanvasTemplate />
-                                <input onBlur={handleValidateCaptcha} type="text" className='p-2 rounded-lg border mt-2 focus:border-yellow-500 focus:outline-none' name='captcha' placeholder="Type the captcha above" />
-                            </div>
-
                             {/* TODO:make button disabled for captcha */}
                             <div className="form-control">
 
@@ -93,7 +72,7 @@ const Login = () => {
                                 <p className='text-center'>Do not have an account? <Link className='text-blue-500' to='/signup'>Sign Up</Link></p>
                             </div>
 
-                                <SocialLogin></SocialLogin>
+                            <SocialLogin></SocialLogin>
                         </form>
                     </div>
                 </div>

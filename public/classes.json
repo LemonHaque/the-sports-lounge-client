@@ -58,7 +58,7 @@
     "type": "popular",
     "sports": "Volleyball",
     "instructorName": "Ariana Lehman",
-    "profilePic": "hhttps://i.ibb.co/1MjdYMb/portrait-female-referee.jpg",
+    "profilePic": "https://i.ibb.co/1MjdYMb/portrait-female-referee.jpg",
     "email": "example@email.com",
     "availableSeats": 4,
     "price": 35,
@@ -92,7 +92,7 @@
   },
   {
     "_id": "sp008",
-    "image": "football.jpg",
+    "image": "https://i.ibb.co/R4jQvFW/football.jpg",
     "name": "Football Camp",
     "type": "regular",
     "sports": "Football",
@@ -105,7 +105,7 @@
   },
   {
     "_id": "sp009",
-    "image": "cricket.jpg",
+    "image": "https://i.ibb.co/4WMZPBk/cricket.jpg",
     "name": "Cricket Tournament",
     "type": "regular",
     "sports": "Cricket",
@@ -118,7 +118,7 @@
   },
   {
     "_id": "sp010",
-    "image": "badminton.jpg",
+    "image": "https://i.ibb.co/99bbT05/badminton.jpg",
     "name": "Badminton Workshop",
     "type": "regular",
     "sports": "Badminton",
@@ -131,7 +131,7 @@
   },
   {
     "_id": "sp011",
-    "image": "basketball.jpg",
+    "image": "https://i.ibb.co/nPMkxGr/basketball.jpg",
     "name": "Basketball Training",
     "type": "regular",
     "sports": "Basketball",
@@ -144,7 +144,7 @@
   },
   {
     "_id": "sp012",
-    "image": "volleyball.jpg",
+    "image": "https://i.ibb.co/0YFrvnd/volley.jpg",
     "name": "Volleyball Clinic",
     "type": "regular",
     "sports": "Volleyball",
@@ -157,7 +157,7 @@
   },
   {
     "_id": "sp013",
-    "image": "tennis.jpg",
+    "image": "https://i.ibb.co/jfdywL5/tennis.jpg",
     "name": "Tennis Summer Camp",
     "type": "regular",
     "sports": "Tennis",
@@ -170,7 +170,7 @@
   },
   {
     "_id": "sp014",
-    "image": "hockey.jpg",
+    "image": "https://i.ibb.co/Y3FJGyh/hockey.jpg",
     "name": "Hockey Skills Workshop",
     "type": "regular",
     "sports": "Hockey",
@@ -183,8 +183,8 @@
   },
   {
     "_id": "sp015",
-    "image": "football.jpg",
-    "name": "Football Conditioning",
+    "image": "https://i.ibb.co/R4jQvFW/football.jpg",
+    "name": "Football Training",
     "type": "regular",
     "sports": "Football",
     "instructorName": "Sophie White",
@@ -196,7 +196,7 @@
   },
   {
     "_id": "sp016",
-    "image": "cricket.jpg",
+    "image": "https://i.ibb.co/4WMZPBk/cricket.jpg",
     "name": "Cricket Skills Development",
     "type": "regular",
     "sports": "Cricket",
@@ -209,7 +209,7 @@
   },
   {
     "_id": "sp017",
-    "image": "badminton.jpg",
+    "image": "https://i.ibb.co/99bbT05/badminton.jpg",
     "name": "Badminton League",
     "type": "regular",
     "sports": "Badminton",
