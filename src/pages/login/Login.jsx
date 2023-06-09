@@ -6,10 +6,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 // import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
-
-
 const Login = () => {
-
     const { signIn } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
@@ -66,8 +63,6 @@ const Login = () => {
                             <div className="form-control">
 
                                 <input disabled={false} className='w-full my-4 btn btn-warning' type="submit" value="Login" />
-
-
                                 <p className='text-center'>Do not have an account? <Link className='text-blue-500' to='/signup'>Sign Up</Link></p>
                             </div>
 
