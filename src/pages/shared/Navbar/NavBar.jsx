@@ -25,7 +25,7 @@ const NavBar = () => {
             <NavLink className="p-2" to="/dashboard/mycart">
                 <button className="btn btn-warning btn-outline btn-sm gap-2">
                     <FaShoppingCart></FaShoppingCart>
-                    <div className="badge">+{cart?.length || 0}</div>
+                    <div className="badge badge-warning">+{cart?.length || 0}</div>
                 </button>
             </NavLink>
 
@@ -56,7 +56,7 @@ const NavBar = () => {
             <div className="navbar-end gap-5">
                 {user && (
                     <div className="relative inline-block mx-4">
-                        <img src={user?.photoURL} alt="Profile" className="rounded-full h-12 w-12 cursor-pointer hover:opacity-90" title={user?.displayName} />
+                        <img src={user.photoURL} alt="Profile" className="rounded-full h-12 w-12 cursor-pointer hover:opacity-90" title={user.displayName} />
                     </div>
                 )}
 
