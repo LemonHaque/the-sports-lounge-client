@@ -6,7 +6,7 @@ import { AuthContext } from "../../../providers/AuthProvider";
 import useCart from "../../../components/hooks/UseCart";
 
 const TrainingClassCard = ({ item }) => {
-    const { image, name, numberOfStudents, _id } = item;
+    const { image, name, numberOfStudents, _id, price } = item;
     const { user } = useContext(AuthContext);
     const [, refetch] = useCart();
     const navigate = useNavigate();
@@ -15,7 +15,7 @@ const TrainingClassCard = ({ item }) => {
     const handleAddToCart = item => {
         console.log(item);
         if (user && user.email) {
-            const cartItem = { menuItemId: _id, name, image, numberOfStudents, email: user.email }
+            const cartItem = { menuItemId: _id, name, image, numberOfStudents, email: user.email,price }
             fetch('http://localhost:5000/carts', {
                 method: 'POST',
                 headers: {

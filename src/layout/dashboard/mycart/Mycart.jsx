@@ -42,8 +42,8 @@ const MyCart = () => {
             <Helmet>
                 <title>Sports Lounge | My Cart</title>
             </Helmet>
-            <div className="uppercase flex font-semibold justify-evenly items-center h-[60px] my-3">
-                <h3 className="text-3xl text-center">Total Items: {cart.length}</h3>
+            <div className="flex font-semibold justify-evenly items-center h-[60px] my-3">
+                <h3 className="text-3xl text-center">Selected Classes: {cart.length}</h3>
                 <h3 className="text-3xl text-center">Total Price: ${total}</h3>
                 <Link to="/dashboard/payment"><button className="btn btn-warning btn-sm">Pay</button></Link>
             </div>
