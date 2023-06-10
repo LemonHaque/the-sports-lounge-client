@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
+import SocialLogin from "../socialLogin/SocialLogin";
 
 const SignUp = () => {
 
@@ -51,7 +52,7 @@ const SignUp = () => {
     };
 
     return (
-        <div className="py-20">
+        <div className="py-20 bg-black glass bg-opacity-5">
             <Helmet>
                 <title>Sports Lounge | SignUp</title>
             </Helmet>
@@ -88,8 +89,8 @@ const SignUp = () => {
                                     minLength: 6,
                                     pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/
                                 })} className='p-2 rounded-lg border mt-2 focus:border-yellow-500 focus:outline-none' type="password" required />
-                                {errors.password?.type === 'minLength' && <p className="text-red-600 my-2" role="alert">Password must be 6 character</p>}
-                                {errors.password?.type === 'pattern' && <p className="text-red-600">Password must have one Uppercase one lower case, one number and one special character.</p>}
+                                {errors.password?.type === 'minLength' && <p className="text-red-600 my-2" role="alert"><li>Password must be 6 character</li></p>}
+                                {errors.password?.type === 'pattern' && <p className="text-red-600"><li>Password must have one Uppercase one lower case, one number and one special character(@/#/!).</li></p>}
 
                             </div>
 
@@ -103,7 +104,7 @@ const SignUp = () => {
                             <p className='text-center'>Already have an account? <Link className='text-blue-500' to='/login'>Login</Link></p>
                             <p className='text-red-500'></p>
                             <p className='text-blue-500'></p>
-                            {/* <SocialLogin></SocialLogin> */}
+                            <SocialLogin></SocialLogin>
                         </form>
                     </div>
                 </div>

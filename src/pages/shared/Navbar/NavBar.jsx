@@ -1,17 +1,17 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
+import { FaShoppingCart } from "react-icons/fa";
+import useCart from "../../../components/hooks/UseCart";
 
 const NavBar = () => {
-    const { user, logOut } = useContext(AuthContext)
-
+    const { user, logOut } = useContext(AuthContext);
+    const [cart]= useCart()
     const handleLogOut = () => {
         logOut()
             .then()
             .catch(error => console.log(error))
     }
-
-
 
     const navItems =
         <>
@@ -22,10 +22,16 @@ const NavBar = () => {
 
             <NavLink to='/classes' className={({ isActive }) => (isActive ? 'text-yellow-500 text-lg font-semibold underline' : 'text-lg')}> <li><a>Classes</a></li> </NavLink>
 
-            <NavLink to='/dashboard' className={({ isActive }) => (isActive ? 'text-yellow-500 text-lg font-semibold underline' : 'text-lg')}> <li><a>Dashboard</a></li> </NavLink>
+            <NavLink className="p-2" to="/dashboard/mycart">
+                <button className="btn btn-warning btn-outline btn-sm gap-2">
+                    <FaShoppingCart></FaShoppingCart>
+                    <div className="badge">+{cart?.length || 0}</div>
+                </button>
+            </NavLink>
+
+
+            {user && <NavLink to='/dashboard' className={({ isActive }) => (isActive ? 'text-yellow-500 text-lg font-semibold underline' : 'text-lg')}> <li><a>Dashboard</a></li> </NavLink>}
         </>
-
-
 
     return (
         <div className="navbar fixed z-40 bg-black bg-opacity-40 glass px-16 text-white shadow py-3 max-w-screen-xl mx-auto">
@@ -47,8 +53,6 @@ const NavBar = () => {
                     {navItems}
                 </ul>
             </div>
-
-
             <div className="navbar-end gap-5">
                 {user && (
                     <div className="relative inline-block mx-4">

@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import SocialLogin from "../socialLogin/SocialLogin";
 // import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
 const Login = () => {
@@ -37,7 +38,7 @@ const Login = () => {
     }
 
     return (
-        <div className="py-20">
+        <div className="py-20 bg-black glass bg-opacity-5">
             <Helmet>
                 <title>Sports Lounge | Login</title>
             </Helmet>
@@ -66,7 +67,7 @@ const Login = () => {
                                 <p className='text-center'>Do not have an account? <Link className='text-blue-500' to='/signup'>Sign Up</Link></p>
                             </div>
 
-                            {/* <SocialLogin></SocialLogin> */}
+                            <SocialLogin></SocialLogin>
                         </form>
                     </div>
                 </div>

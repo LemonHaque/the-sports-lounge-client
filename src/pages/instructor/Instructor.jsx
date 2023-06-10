@@ -27,10 +27,10 @@ const Instructor = () => {
 
                         <div className="card card-side  shadow-xl glass bg-black bg-opacity-80 text-white">
                             <figure><img className="h-96" src={single.profilePic} alt="Instructor" /></figure>
-                            <div className="card-body">
-                                <h2 className="card-title">Instructor Name: {single.instructorName}</h2>
-                                <h2 className="">Offered Course: {single.name}</h2>
-                                <p>Email: {single.email}</p>
+                            <div className="card-body my-auto">
+                                <h2 className="card-title py-3">Instructor Name: {single.instructorName}</h2>
+                                <h2 className="py-2">Offered Course: {single.name}</h2>
+                                <p className="pb-3">Email: {single.email}</p>
                                 <div className="card-actions justify-end">
                                     <button className="btn btn-warning">Enroll Now</button>
                                 </div>
