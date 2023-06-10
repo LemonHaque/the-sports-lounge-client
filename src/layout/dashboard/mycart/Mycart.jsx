@@ -28,7 +28,7 @@ const MyCart = () => {
                             refetch();
                             Swal.fire(
                                 'Deleted!',
-                                'Your added food has been deleted.',
+                                'Your added classes has been deleted.',
                                 'success'
                             )
                         }
@@ -68,13 +68,13 @@ const MyCart = () => {
                                 <td>{index + 1}</td>
                                 <td>
                                     <div className="avatar">
-                                        <div className="mask mask-squircle w-12 h-12">
+                                        <div className="mask mask-half-1 w-12 h-12">
                                             <img src={item.image} />
                                         </div>
                                     </div>
                                 </td>
-                                <td>{item.name}</td>
-                                <td className="text-end">${item.price}</td>
+                                <td className="font-semibold">{item.name}</td>
+                                <td >${item.price}</td>
                                 <td>
                                     <button onClick={() => handleDelete(item)} className="btn btn-error text-white bg-red-600"><FaTrashAlt></FaTrashAlt></button>
                                 </td>
