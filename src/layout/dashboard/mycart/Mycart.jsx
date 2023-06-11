@@ -1,11 +1,11 @@
 import Swal from "sweetalert2";
-import useCart from "../../../components/hooks/UseCart";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { FaTrashAlt } from "react-icons/fa";
+import UseCart from "../../../hooks/UseCart";
 
 const MyCart = () => {
-    const [cart, refetch] = useCart();
+    const [cart, refetch] = UseCart();
     console.log(cart);
     const total = cart?.reduce((sum, item) => item.price + sum, 0)
     const handleDelete = item => {
@@ -42,6 +42,9 @@ const MyCart = () => {
             <Helmet>
                 <title>Sports Lounge | My Cart</title>
             </Helmet>
+            <div className="text-center my-10">
+                    <p className="text-4xl md:text-5xl font-bold text-black uppercase border-y-4 py-4 w-4/12 mx-auto">My Selected Classes</p>
+                </div>
             <div className="flex font-semibold justify-evenly items-center h-[60px] my-3">
                 <h3 className="text-3xl text-center">Selected Classes: {cart.length}</h3>
                 <h3 className="text-3xl text-center">Total Price: ${total}</h3>

@@ -1,8 +1,7 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
-import { FaShoppingCart } from "react-icons/fa";
-import useCart from "../../../components/hooks/UseCart";
+import useCart from "../../../hooks/UseCart";
 
 const NavBar = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -23,10 +22,9 @@ const NavBar = () => {
             <NavLink to='/classes' className={({ isActive }) => (isActive ? 'text-yellow-500 text-lg font-semibold underline' : 'text-lg')}> <li><a>Classes</a></li> </NavLink>
 
             <NavLink className="p-2" to="/dashboard/mycart">
-                <button className="btn btn-warning btn-outline btn-sm gap-2">
-                    <FaShoppingCart></FaShoppingCart>
+                <p>Selected Class
                     <div className="badge badge-warning">+{cart?.length || 0}</div>
-                </button>
+                </p>
             </NavLink>
 
 

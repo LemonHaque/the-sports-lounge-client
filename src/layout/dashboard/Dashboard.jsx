@@ -1,17 +1,17 @@
 
 import { NavLink, Outlet } from "react-router-dom";
-import useCart from "../../components/hooks/UseCart";
-import {  FaCalendarAlt, FaHome, FaShoppingCart, FaUsers, FaUtensils, FaWallet } from "react-icons/fa";
+import useCart from "../../hooks/UseCart";
+import { FaCalendarAlt, FaHome, FaPlus, FaShoppingCart, FaUsers, FaWallet } from "react-icons/fa";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import UseAdmin from "../../hooks/UseAdmin";
 
 const DashBoard = () => {
     const [cart] = useCart();
-    const { user } = useContext(AuthContext)
+    const { user } = useContext(AuthContext);
 
-    // TODO: load data from the server to have dynamic isadmin based on data
-    // const isAdmin = true;
-    // const [isAdmin] = useAdmin();
+    // const [isAdmin] = UseAdmin();
+    const isAdmin = true;
 
     return (
         <div className="drawer">
@@ -28,16 +28,22 @@ const DashBoard = () => {
                     <div className="flex-none hidden lg:block">
                         <ul className="menu menu-horizontal">
                             {/* Navbar menu content here */}
-
                             <li><NavLink to="/"><FaHome></FaHome>Back to Home</NavLink></li>
-                            <li><NavLink to="/dashboard/adminhome"><FaHome></FaHome>Admin Home</NavLink></li>
-                            <li><NavLink to="/dashboard/additem"><FaUtensils></FaUtensils> Add An Class</NavLink></li>
-                            <li><NavLink to="/dashboard/allusers"><FaUsers></FaUsers>All Users</NavLink></li>
-                            <li><NavLink to="/dashboard/userhome"><FaHome></FaHome>User Home</NavLink></li>
-                            <li><NavLink to="/dashboard/enrolled"><FaCalendarAlt></FaCalendarAlt>Enrolled Classes</NavLink></li>
-                            <li><NavLink to="/dashboard/history"><FaWallet></FaWallet>Payment History</NavLink></li>
-                            <li><NavLink to="/dashboard/mycart"><FaShoppingCart></FaShoppingCart> My Cart
-                                <span className="badge badge-warning">+{cart?.length || 0}</span> </NavLink> </li>
+                            {
+                                isAdmin ?
+                                    <>
+                                        <li><NavLink to="/dashboard/adminhome"><FaHome></FaHome>Admin Home</NavLink></li>
+                                        <li><NavLink to="/dashboard/additem"><FaPlus></FaPlus>Add An Class</NavLink></li>
+                                        <li><NavLink to="/dashboard/allusers"><FaUsers></FaUsers>All Users</NavLink></li>
+                                    </> :
+                                    <>
+                                        <li><NavLink to="/dashboard/userhome"><FaHome></FaHome>User Home</NavLink></li>
+                                        <li><NavLink to="/dashboard/enrolled"><FaCalendarAlt></FaCalendarAlt>Enrolled Classes</NavLink></li>
+                                        <li><NavLink to="/dashboard/history"><FaWallet></FaWallet>Payment History</NavLink></li>
+                                        <li><NavLink to="/dashboard/mycart"><FaShoppingCart></FaShoppingCart> My Selected
+                                            <span className="badge badge-warning">+{cart?.length || 0}</span> </NavLink> </li>
+                                    </>
+                            }
                         </ul>
 
                     </div>
@@ -55,18 +61,26 @@ const DashBoard = () => {
                             <li>{user.email}</li>
                         </>
                     }
-                    <li><NavLink to="/dashboard/adminhome"><FaHome></FaHome>Admin Home</NavLink></li>
-                    <li><NavLink to="/dashboard/additem"><FaUtensils></FaUtensils> Add An Class</NavLink></li>
-                    <li><NavLink to="/dashboard/allusers"><FaUsers></FaUsers>All Users</NavLink></li>
-                    <li><NavLink to="/dashboard/userhome"><FaHome></FaHome>User Home</NavLink></li>
-                    <li><NavLink to="/dashboard/enrolled"><FaCalendarAlt></FaCalendarAlt>Enrolled Classes</NavLink></li>
-                    <li><NavLink to="/dashboard/history"><FaWallet></FaWallet>Payment History</NavLink></li>
-                    <li><NavLink to="/dashboard/mycart"><FaShoppingCart></FaShoppingCart> My Cart
-                        <span className="badge badge-warning">+{cart?.length || 0}</span> </NavLink> </li>
-                        <div className="divider"></div>
-                        <li><NavLink to="/"><FaHome></FaHome>Back to Home</NavLink></li>
+                    {
+                        isAdmin ?
+                            <>
+                                <li><NavLink to="/dashboard/adminhome"><FaHome></FaHome>Admin Home</NavLink></li>
+                                <li><NavLink to="/dashboard/additem"><FaPlus></FaPlus>Add An Class</NavLink></li>
+                                <li><NavLink to="/dashboard/allusers"><FaUsers></FaUsers>All Users</NavLink></li>
+                            </> :
+                            <>
+                                <li><NavLink to="/dashboard/userhome"><FaHome></FaHome>User Home</NavLink></li>
+                                <li><NavLink to="/dashboard/enrolled"><FaCalendarAlt></FaCalendarAlt>Enrolled Classes</NavLink></li>
+                                <li><NavLink to="/dashboard/history"><FaWallet></FaWallet>Payment History</NavLink></li>
+                                <li><NavLink to="/dashboard/mycart"><FaShoppingCart></FaShoppingCart> My Selected
+                                    <span className="badge badge-warning">+{cart?.length || 0}</span> </NavLink> </li>
+                            </>
+                    }
+
+                    <div className="divider"></div>
+                    <li><NavLink to="/"><FaHome></FaHome>Back to Home</NavLink></li>
                 </ul>
-               
+
 
             </div>
         </div>

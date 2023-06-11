@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
-import useCart from "../../../components/hooks/UseCart";
+import useCart from "../../../hooks/UseCart";
 
 const TrainingClassCard = ({ item }) => {
     const { image, name, numberOfStudents, _id, price } = item;
@@ -30,7 +30,7 @@ const TrainingClassCard = ({ item }) => {
                         Swal.fire({
                             position: 'top-end',
                             icon: 'success',
-                            title: 'Food added on the cart.',
+                            title: 'Class added on selected Classes',
                             showConfirmButton: false,
                             timer: 1500
                         })
