@@ -1,8 +1,5 @@
-
-// import { useContext } from "react";
 import { useContext } from "react";
 import { FaGoogle } from "react-icons/fa";
-// import { AuthContext } from "../../../Providers/AuthProvider";
 import { useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
@@ -21,7 +18,7 @@ const SocialLogin = () => {
                 console.log(loggedInUser);
                 const saveUser = { name: loggedInUser.displayName, email: loggedInUser.email }
 
-                    fetch('https://bistro-boss-server-kappa-eight.vercel.app/users', {
+                    fetch('http://localhost:5000/users', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
