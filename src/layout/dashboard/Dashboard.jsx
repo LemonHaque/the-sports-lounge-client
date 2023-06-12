@@ -36,13 +36,13 @@ const DashBoard = () => {
                                         <li><NavLink to="/dashboard/addaclass"><FaPlus></FaPlus>Add A Class</NavLink></li>
                                         <li><NavLink to="/dashboard/manageclasses"><FaTools></FaTools>Manage Classes</NavLink></li>
                                         <li><NavLink to="/dashboard/allusers"><FaUsers></FaUsers>All Users</NavLink></li>
-                                        <li><NavLink to="/dashboard/mycart"><FaShoppingCart></FaShoppingCart> My Selected
+                                        <li><NavLink to="/dashboard/mycart"><FaShoppingCart></FaShoppingCart>Selected Class
                                             <span className="badge badge-warning">+{cart?.length || 0}</span> </NavLink> </li>
                                     </> :
                                     <>
                                         <li><NavLink to="/dashboard/userhome"><FaHome></FaHome>User Home</NavLink></li>
                                         <li><NavLink to="/dashboard/history"><FaWallet></FaWallet>Payment History</NavLink></li>
-                                        <li><NavLink to="/dashboard/mycart"><FaShoppingCart></FaShoppingCart> My Selected
+                                        <li><NavLink to="/dashboard"><FaShoppingCart></FaShoppingCart>Selected Class
                                             <span className="badge badge-warning">+{cart?.length || 0}</span> </NavLink> </li>
                                         <li><NavLink to="/dashboard/enrolled"><FaCalendarAlt></FaCalendarAlt>My Enrolled Classes</NavLink></li>
 
@@ -72,7 +72,7 @@ const DashBoard = () => {
                                 <li><NavLink to="/dashboard/addaclass"><FaPlus></FaPlus>Add A Class</NavLink></li>
                                 <li><NavLink to="/dashboard/manageclasses"><FaTools></FaTools>Manage Classes</NavLink></li>
                                 <li><NavLink to="/dashboard/allusers"><FaUsers></FaUsers>All Users</NavLink></li>
-                                <li><NavLink to="/dashboard/mycart"><FaShoppingCart></FaShoppingCart>Selected Class
+                                <li><NavLink to="/dashboard"><FaShoppingCart></FaShoppingCart>Selected Class
                                     <span className="badge badge-warning">+{cart?.length || 0}</span> </NavLink> </li>
                             </> :
                             <>
