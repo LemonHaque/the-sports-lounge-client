@@ -1,11 +1,49 @@
 import { useForm } from 'react-hook-form';
+import UseAxiosSecure from '../../../hooks/UseAxiosSecure';
+import Swal from 'sweetalert2';
+
+
+const img_hosting_token = import.meta.env.VITE_Image_Upload_Token;
 
 const AddAClass = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const [axiosSecure] = UseAxiosSecure();
+    const { register, handleSubmit, reset } = useForm();
+    const img_hosting_url = `https://api.imgbb.com/1/upload?key=${img_hosting_token}`
+
     const onSubmit = data => {
-        console.log(data)
+        const formData = new FormData();
+        formData.append('image', data.image[0])
+        formData.append('profilePic', data.profilePic[0])
+        // console.log(data);
+        fetch(img_hosting_url, {
+            method: 'POST',
+            body: formData
+        })
+            .then(res => res.json())
+            .then(imgResponse => {
+                if (imgResponse.success) {
+                    const imgURL = imgResponse.data.display_url;
+                    const { name, price, sports, type, email, instructorName,availableSeats,numberOfStudents } = data;
+                    const newItem = { name, price: parseFloat(price), sports, type, email, instructorName, availableSeats: parseFloat(availableSeats),numberOfStudents:parseFloat(numberOfStudents), image: imgURL,profilePic: imgURL,  }
+                    console.log(newItem)
+                    axiosSecure.post('/classes', newItem)
+                        .then(data => {
+                            console.log('after posting new menu item', data.data)
+                            if (data.data.insertedId) {
+                                reset();
+                                Swal.fire({
+                                    position: 'top-end',
+                                    icon: 'success',
+                                    title: 'Class added successfully',
+                                    showConfirmButton: false,
+                                    timer: 1500
+                                })
+                            }
+                        })
+                }
+            })
     };
-    console.log(errors);
+    // console.log(errors);
 
 
     return (

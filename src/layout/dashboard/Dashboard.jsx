@@ -1,7 +1,7 @@
 
 import { NavLink, Outlet } from "react-router-dom";
 import useCart from "../../hooks/UseCart";
-import { FaCalendarAlt, FaHome, FaPlus, FaShoppingCart, FaUsers, FaWallet } from "react-icons/fa";
+import { FaCalendarAlt, FaHome, FaPlus, FaShoppingCart, FaTools, FaUsers, FaWallet } from "react-icons/fa";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import UseAdmin from "../../hooks/UseAdmin";
@@ -34,6 +34,7 @@ const DashBoard = () => {
                                     <>
                                         <li><NavLink to="/dashboard/adminhome"><FaHome></FaHome>Admin Home</NavLink></li>
                                         <li><NavLink to="/dashboard/addaclass"><FaPlus></FaPlus>Add A Class</NavLink></li>
+                                        <li><NavLink to="/dashboard/manageclasses"><FaTools></FaTools>Manage Classes</NavLink></li>
                                         <li><NavLink to="/dashboard/allusers"><FaUsers></FaUsers>All Users</NavLink></li>
                                         <li><NavLink to="/dashboard/mycart"><FaShoppingCart></FaShoppingCart> My Selected
                                             <span className="badge badge-warning">+{cart?.length || 0}</span> </NavLink> </li>
@@ -69,6 +70,7 @@ const DashBoard = () => {
                             <>
                                 <li><NavLink to="/dashboard/adminhome"><FaHome></FaHome>Admin Home</NavLink></li>
                                 <li><NavLink to="/dashboard/addaclass"><FaPlus></FaPlus>Add A Class</NavLink></li>
+                                <li><NavLink to="/dashboard/manageclasses"><FaTools></FaTools>Manage Classes</NavLink></li>
                                 <li><NavLink to="/dashboard/allusers"><FaUsers></FaUsers>All Users</NavLink></li>
                                 <li><NavLink to="/dashboard/mycart"><FaShoppingCart></FaShoppingCart>Selected Class
                                     <span className="badge badge-warning">+{cart?.length || 0}</span> </NavLink> </li>
