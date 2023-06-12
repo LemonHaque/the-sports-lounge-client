@@ -39,7 +39,7 @@ const TrainingClassCard = ({ item }) => {
         }
         else {
             Swal.fire({
-                title: 'Please login to order the food',
+                title: 'Please login to get admitted',
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',

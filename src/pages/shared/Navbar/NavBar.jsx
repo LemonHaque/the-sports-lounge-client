@@ -15,12 +15,8 @@ const NavBar = () => {
     const navItems =
         <>
             <NavLink to='/' className={({ isActive }) => (isActive ? 'text-yellow-500 text-lg font-semibold underline' : 'text-lg')}> <li><a>Home</a></li> </NavLink>
-
             <NavLink to='/instructor' className={({ isActive }) => (isActive ? 'text-yellow-500 text-lg font-semibold underline' : 'text-lg')}> <li><a>Instructors</a></li> </NavLink>
-
-
             <NavLink to='/classes' className={({ isActive }) => (isActive ? 'text-yellow-500 text-lg font-semibold underline' : 'text-lg')}> <li><a>Classes</a></li> </NavLink>
-
             <NavLink className="p-2" to="/dashboard/mycart">
                 <p>Selected Class
                     <div className="badge badge-warning">+{cart?.length || 0}</div>
@@ -28,7 +24,7 @@ const NavBar = () => {
             </NavLink>
 
 
-            {user && <NavLink to='/dashboard' className={({ isActive }) => (isActive ? 'text-yellow-500 text-lg font-semibold underline' : 'text-lg')}> <li><a>Dashboard</a></li> </NavLink>}
+            {user && <NavLink to='/dashboard/mycart' className={({ isActive }) => (isActive ? 'text-yellow-500 text-lg font-semibold underline' : 'text-lg')}> <li><a>Dashboard</a></li> </NavLink>}
         </>
 
     return (

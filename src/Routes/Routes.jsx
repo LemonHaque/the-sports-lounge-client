@@ -12,6 +12,8 @@ import Dashboard from "../layout/dashboard/Dashboard";
 import MyCart from "../layout/dashboard/mycart/Mycart";
 import PrivateRoute from "./PrivateRoute";
 import AllUsers from "../providers/allUsers/Allusers";
+import AdminRoute from "./AdminRoutes";
+import AddAClass from "../layout/dashboard/addAClass/AddAClass";
 
 export const router = createBrowserRouter([
     {
@@ -44,15 +46,19 @@ export const router = createBrowserRouter([
     {
         path: 'dashboard',
         element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
-        children:[
+        children: [
             {
-                path:'mycart',
-                element:<MyCart></MyCart>
+                path: 'mycart',
+                element: <MyCart></MyCart>
             },
             {
-                path: 'allusers', 
-                element: <AllUsers></AllUsers>
-              }
+                path: 'allusers',
+                element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
+            },
+            {
+                path: 'addaclass',
+                element: <AdminRoute><AddAClass></AddAClass></AdminRoute>
+            },
         ]
     }
 ]);
