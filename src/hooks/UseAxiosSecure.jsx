@@ -3,14 +3,16 @@ import { useNavigate } from "react-router-dom";
 import UseAuth from "./UseAuth";
 import { useEffect } from "react";
 
+const axiosSecure = axios.create({
+    baseURL: 'https://the-sports-lounge-server.vercel.app',
+});
+
 
 const UseAxiosSecure = () => {
     const { logOut } = UseAuth();
     const navigate = useNavigate();
 
-    const axiosSecure = axios.create({
-        baseURL: 'http://localhost:5000',
-    });
+  
 
     useEffect(() => {
         axiosSecure.interceptors.request.use((config) => {
@@ -31,7 +33,7 @@ const UseAxiosSecure = () => {
                 return Promise.reject(error);
             }
         );
-    }, [logOut, navigate, axiosSecure]);
+    }, [logOut, navigate]);
 
     return [axiosSecure];
 };

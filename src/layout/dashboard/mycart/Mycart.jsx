@@ -19,7 +19,7 @@ const MyCart = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/carts/${item._id}`, {
+                fetch(`https://the-sports-lounge-server.vercel.app/carts/${item._id}`, {
                     method: 'DELETE',
                 })
                     .then(res => res.json())
@@ -43,12 +43,12 @@ const MyCart = () => {
                 <title>Sports Lounge | My Cart</title>
             </Helmet>
             <div className="text-center my-10">
-                    <p className="text-4xl md:text-5xl font-bold text-black uppercase border-y-4 py-4 w-4/12 mx-auto">My Selected Classes</p>
+                    <p className="text-4xl md:text-5xl font-bold text-black uppercase border-b-4 py-4 w-4/12 mx-auto">My Selected Classes</p>
                 </div>
             <div className="flex font-semibold justify-evenly items-center h-[60px] my-3">
                 <h3 className="text-3xl text-center">Selected Classes: {cart.length}</h3>
                 <h3 className="text-3xl text-center">Total Price: ${total}</h3>
-                <Link to="/dashboard/payment"><button className="btn btn-warning btn-sm">Pay</button></Link>
+                <Link to="/dashboard/payment"><button className="btn btn-warning btn-sm">Payment</button></Link>
             </div>
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
@@ -77,7 +77,7 @@ const MyCart = () => {
                                     </div>
                                 </td>
                                 <td className="font-semibold">{item.name}</td>
-                                <td >${item.price}</td>
+                                <td>${item.price}</td>
                                 <td>
                                     <button onClick={() => handleDelete(item)} className="btn btn-error text-white bg-red-600"><FaTrashAlt></FaTrashAlt></button>
                                 </td>

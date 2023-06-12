@@ -16,7 +16,7 @@ const TrainingClassCard = ({ item }) => {
         console.log(item);
         if (user && user.email) {
             const cartItem = { menuItemId: _id, name, image, numberOfStudents, email: user.email,price }
-            fetch('http://localhost:5000/carts', {
+            fetch('https://the-sports-lounge-server.vercel.app/carts', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
@@ -56,7 +56,7 @@ const TrainingClassCard = ({ item }) => {
     return (
         <div>
 
-            <div className=" w-96 h-[450px] glass text-center border-40 bg-black text-white">
+            <div className="mx-auto w-96 h-[450px] glass text-center border-40 bg-black text-white">
                 <figure><img src={image} alt="car!" /></figure>
                 <div className="card-body">
                     <h2 className="text-xl font-semibold">{name}</h2>

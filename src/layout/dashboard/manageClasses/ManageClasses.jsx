@@ -69,9 +69,9 @@ const ManageClasses = () => {
                                     </div>
                                 </td>
                                 <td>
-                                    {item.category}
+                                    {item.type}
                                 </td>
-                                <td className="text-end">$ {item.price}</td>
+                                <td>$ {item.price}</td>
                                 <td>
                                     <button className="btn btn-warning btn-xs">Update</button>
                                 </td>
